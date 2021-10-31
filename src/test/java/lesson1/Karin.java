@@ -1,4 +1,4 @@
-package lesson5;
+package lesson1;
 
 import org.testng.annotations.Test;
 
