@@ -21,7 +21,7 @@ public class WebDriverObjectMethods01 {
     }
 
     @Test
-    public void connectToImdb() {
+        public void connectToImdb() {
         driver.navigate().refresh();
         String title = driver.getTitle();
         String url = driver.getCurrentUrl();
