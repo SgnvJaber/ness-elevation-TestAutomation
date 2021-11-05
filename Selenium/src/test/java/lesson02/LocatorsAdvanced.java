@@ -94,8 +94,6 @@ public class LocatorsAdvanced {
             }
 
         }
-
-
     }
 
     @AfterClass
