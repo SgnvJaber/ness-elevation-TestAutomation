@@ -1,5 +1,6 @@
-package lesson03;
+package lesson04;
 
+import helpers.Reader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,33 +11,29 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class AssertsAndVerifications01 {
+public class ExternalFiles {
     private WebDriver driver;
-    private final String weight = "90";
-    private final String height = "163";
     private String result = "";
     private String means = "";
-    private final String expectedResult = "34";
-    private final String expectedMeans = "That you have overweight.";
-
+    private Reader read=new Reader();
     @BeforeClass
     public void openBrowser() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://atidcollege.co.il/Xamples/bmi/");
+        driver.get(read.getData("URL",0));
     }
 
     @Test
     public void test01_fillWeight() {
         WebElement weight_field = driver.findElement(By.xpath("//input[@name='weight']"));
-        weight_field.sendKeys(weight);
+        weight_field.sendKeys(read.getData("Weight",0));
     }
 
     @Test
     public void test02_fillHeight() {
         WebElement height_field = driver.findElement(By.xpath("//input[@name='height']"));
-        height_field.sendKeys(height);
+        height_field.sendKeys(read.getData("Height",0));
     }
 
     @Test
@@ -49,14 +46,14 @@ public class AssertsAndVerifications01 {
     public void test04_verifyResult() {
         WebElement bmi_result = driver.findElement(By.xpath("//input[@id='bmi_result']"));
         result = bmi_result.getAttribute("value");
-        Assert.assertEquals(result, expectedResult);
+        Assert.assertEquals(result, read.getData("ExpectedResult",0));
     }
 
     @Test
     public void test05_verifyMeans() {
         WebElement bmi_means = driver.findElement(By.xpath("//input[@id='bmi_means']"));
         means = bmi_means.getAttribute("value");
-        Assert.assertEquals(means, expectedMeans);
+        Assert.assertEquals(means, read.getData("ExpectedMeans",0));
     }
 
     @AfterClass
