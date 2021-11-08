@@ -53,7 +53,7 @@ public class Synchronization {
     }
 
     @Test
-    public void test03_verifyRemoveButton() throws InterruptedException {
+    public void test03_verifyRemoveButton() {
         WebElement button = driver.findElement(By.xpath("//button[text()='Remove']"));
         button.click();
         driver.manage().timeouts().implicitlyWait(waitTime, TimeUnit.SECONDS);
