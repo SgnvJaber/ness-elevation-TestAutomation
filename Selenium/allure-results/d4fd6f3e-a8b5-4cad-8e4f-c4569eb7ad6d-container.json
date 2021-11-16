@@ -1,0 +1,1 @@
+{"uuid":"d4fd6f3e-a8b5-4cad-8e4f-c4569eb7ad6d","name":"lesson07.RecorderObject","children":["cf0f01aa-b081-4cf2-97fe-56a9258d5f66"],"befores":[{"name":"openBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1636900767574,"stop":1636900770261}],"afters":[],"start":1636900767530,"stop":1636900771308}

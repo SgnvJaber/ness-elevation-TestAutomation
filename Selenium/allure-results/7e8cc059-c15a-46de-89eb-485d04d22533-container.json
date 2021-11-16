@@ -1,0 +1,1 @@
+{"uuid":"7e8cc059-c15a-46de-89eb-485d04d22533","name":"lesson07.TableReader.TableMain","children":["c0d5dc2b-c36c-4d3a-b799-7d1ed03b2f7f"],"befores":[{"name":"openBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1636966127191,"stop":1636966137293}],"afters":[],"start":1636966127144,"stop":1636966137472}

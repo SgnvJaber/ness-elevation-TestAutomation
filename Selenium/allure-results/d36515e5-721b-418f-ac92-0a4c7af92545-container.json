@@ -1,0 +1,1 @@
+{"uuid":"d36515e5-721b-418f-ac92-0a4c7af92545","name":"lesson07.PageObjectPattern.MainObject","children":["aad61c5e-4522-4b8f-86ea-d529a2a6593c"],"befores":[{"name":"openBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1636897500284,"stop":1636897502763}],"afters":[],"start":1636897500225,"stop":1636897503597}

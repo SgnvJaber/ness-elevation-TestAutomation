@@ -51,6 +51,7 @@ public class AutomatingGraphicElements {
             zoom_in();
             zoom_in();
             findNearbyRestaurants();
+            Uninterruptibles.sleepUninterruptibly(8, TimeUnit.SECONDS);
         } catch (
                 Exception e) {
             saveScreenshot(driver);
@@ -87,7 +88,7 @@ public class AutomatingGraphicElements {
 
     @AfterClass
     public void closeBrowser() {
-        //driver.quit();
+        driver.quit();
     }
 
 
