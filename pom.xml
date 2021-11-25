@@ -11,6 +11,8 @@
     <modules>
         <module>Selenium</module>
         <module>Appium</module>
+        <module>RestApi</module>
+        <module>Desktop</module>
     </modules>
 
     <properties>

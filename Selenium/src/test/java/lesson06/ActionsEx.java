@@ -36,7 +36,7 @@ public class ActionsEx {
         driver.manage().window().maximize();
         driver.get("https://atidcollege.co.il/Xamples/ex_actions.html");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            action = new Actions(driver);
+        action = new Actions(driver);
         wait = new WebDriverWait(driver, waitTime);
     }
 
