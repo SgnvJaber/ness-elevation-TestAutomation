@@ -10,7 +10,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import static java.lang.System.in;
-
 //Source:https://stackoverflow.com/questions/5882005/how-to-download-image-from-any-web-page-in-java
 public class SaveImageFromUrl {
 
